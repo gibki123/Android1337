@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">My Application</string>
+    <string name="name">Imię</string>
+    <string name="toppings">Dodatki</string>
+    <string name="whipped_cream">Bita śmietana</string>
+    <string name="chocolate">Czekolada</string>
+    <string name="quantity">Ilość</string>
+    <string name="order">Zamówienie</string>
+    <string name="thank_you">Dziękuję</string>
+    <string name="total">Całość</string>
+    <string name="order_for">Zamówienie dla <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="add">Dodać</string>
+    <string name="MainName">Imię: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+</resources>
