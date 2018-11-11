@@ -1,8 +1,7 @@
 package com.example.android.listofbooks;
 
+import android.content.AsyncTaskLoader;
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v4.content.AsyncTaskLoader;
 
 import java.util.List;
 
@@ -24,7 +23,6 @@ public class WydarzenieLoader extends AsyncTaskLoader<List<Wydarzenie>> {
         forceLoad();
     }
 
-    @Nullable
     @Override
     public List<Wydarzenie> loadInBackground() {
         if(PolskieNewsyUrl == null){

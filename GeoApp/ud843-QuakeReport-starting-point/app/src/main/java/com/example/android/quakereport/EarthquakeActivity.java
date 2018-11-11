@@ -45,6 +45,7 @@ public class EarthquakeActivity extends AppCompatActivity
     /** URL for earthquake data from the USGS dataset */
     private static final String USGS_REQUEST_URL =
             "http://earthquake.usgs.gov/fdsnws/event/1/query";
+    private static final String USGS_REQUEST_URL2 = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&orderby=time&minmag=5&limit=10";
 
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.
@@ -137,7 +138,7 @@ public class EarthquakeActivity extends AppCompatActivity
         uriBuilder.appendQueryParameter("minmag", minMagnitude);
         uriBuilder.appendQueryParameter("orderby", "time");
 
-        return new EarthquakeLoader(this, uriBuilder.toString());
+        return new EarthquakeLoader(this,USGS_REQUEST_URL2);
     }
 
     @Override
